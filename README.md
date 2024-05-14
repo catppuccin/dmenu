@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/res.webp"/>
+	<img src="assets/preview.webp"/>
 </p>
 
 ## Previews
@@ -36,10 +36,8 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Copy the contents of your flavor of choice from [`themes/`](./themes/) to your `config.h` file
-3. Run `sudo make install` in your dmenu config directory
-
+1. Copy the contents of your flavor of choice from [`themes/`](./themes/) to your `config.h` file.
+2. Run `sudo make install` in your Dmenu configuration directory.
 
 &nbsp;
 
