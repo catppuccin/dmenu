@@ -37,7 +37,7 @@
 ## Usage
 
 1. Clone this repository locally
-2. Copy the contents of the selected flavour to your `config.h` file
+2. Copy the contents of your flavor of choice from [`themes/`](./themes/) to your `config.h` file
 3. Run `sudo make install` in your dmenu config directory
 
 
