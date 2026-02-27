@@ -1,0 +1,17 @@
+name: Whiskers check
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run:
+    uses: catppuccin/actions/.github/workflows/whiskers-check.yml@v1
+    with:
+      args: |
+        dmenu.tera
+        dmenu-scripts.tera
+    secrets: inherit

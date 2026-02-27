@@ -1,0 +1,12 @@
+---
+whiskers:
+  version: "^2.6.1"
+  matrix:
+    - flavor
+    - accent
+  filename: "scripts/{{ flavor.identifier }}/dmenu-{{ flavor.identifier }}-{{ accent }}.sh"
+---
+{%- set palette = flavor.colors -%}
+dmenu_run -nf '#{{ palette.text.hex }}' -nb '#{{ palette.base.hex }}'\
+	-sf '#{{ palette.base.hex }}' -sb '#{{ palette[accent].hex }}'\
+	-of '#{{ palette.text.hex }}' -ob '#{{ palette[accent].hex }}'

@@ -1,15 +1,15 @@
 ---
 whiskers:
-  version: 2.0.0
+  version: "^2.6.1"
   matrix:
     - flavor
-  filename: "themes/{{ flavor.identifier }}.h"
+    - accent
+  filename: "themes/{{ flavor.identifier }}/{{ flavor.identifier }}-{{ accent }}.h"
 ---
 {%- set palette = flavor.colors -%}
 static const char *colors[SchemeLast][2] = {
 	/*     fg         bg       */
 	[SchemeNorm] = { "#{{ palette.text.hex }}", "#{{ palette.base.hex }}" },
-	[SchemeSel] = { "#{{ palette.base.hex }}", "#{{ palette.sky.hex }}" },
-	[SchemeOut] = { "#000000", "#{{ palette.sky.hex }}" },
+	[SchemeSel] = { "#{{ palette.base.hex }}", "#{{ palette[accent].hex }}" },
+	[SchemeOut] = { "#{{ palette.text.hex }}", "#{{ palette[accent].hex }}" },
 };
-

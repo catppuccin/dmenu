@@ -39,6 +39,10 @@
 1. Copy the contents of your flavor of choice from [`themes/`](./themes/) to your `config.h` file.
 2. Run `sudo make install` in your Dmenu configuration directory.
 
+## Testing
+
+1. You can try the colors with `dmenu` > 5.4 (the commit for the -ob & -of flags are [here](https://git.suckless.org/dmenu/commit/7175c4880bac3d2a2d4a6262b59193f0a38e2fdb.html)) by running scripts located in [`scripts/`](./scripts/).
+
 &nbsp;
 
 <p align="center">
